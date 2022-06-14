@@ -6,10 +6,9 @@ html {
 
 body {
   margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: 'Chakra Petch', sans-serif;
   background: linear-gradient(to bottom, rgb(14, 14, 38) 0%, rgba(19, 19, 51, 0.933) 40%, rgba(19, 19, 51, 0.832) 70%, rgba(19, 19, 51, 0.803) 100%);
+  background-color: #000000;
   background-repeat: no-repeat;
   color: white;
 }
@@ -67,28 +66,25 @@ h6 {
   z-index: 2;
 } 
 
-
-/* white sparkle */
-
-/*
-.ball:after {  
+ /* white sparkle */
+ /* TODO: fix that in small screens */
+  .ball:after { 
+  position: absolute;
   width: 10%;
   height: 100%;
   content: "";
   top: 40%;
+  right: 5%;
   background: radial-gradient(circle at 45% 50%, rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.262) 14%, rgba(255, 255, 255, 0) 22%);
-  -webkit-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -moz-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -ms-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -o-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-
+  -webkit-transform: translateX(-80%) translateY(-20%) skewX(-20deg);
+  -moz-transform: translateX(-80%) translateY(-20%) skewX(-20deg);
+  -ms-transform: translateX(-80%) translateY(-20%) skewX(-20deg);
+  -o-transform: translateX(-80%) translateY(-20%) skewX(-20deg);
+  transform: translateX(-80%) translateY(-20%) skewX(-20deg);
   -webkit-filter: blur(15px);
-  filter: blur(15px);
+  filter: blur(15px);  
   z-index: 3;
-}
-
-*/
+} 
 
 /* 
  .eightCircle {
