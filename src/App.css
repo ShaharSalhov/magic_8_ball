@@ -1,26 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Chakra+Petch:wght@300&family=Indie+Flower&family=Montserrat:wght@100&family=Orelega+One&family=Sunflower&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Chakra Petch', sans-serif;
+  background: linear-gradient(to bottom, rgb(14, 14, 38) 0%, rgba(19, 19, 51, 0.933) 40%, rgba(19, 19, 51, 0.832) 70%, rgba(19, 19, 51, 0.803) 100%);
+  background-repeat: no-repeat;
+  color: white;
+}
+
 .App {
+  border: 1px red solid;
   text-align: center;
+  font-size: 160%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.pic {
-  height: 60vmin;
+/* h4 {
+  font-size: 150%;
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+}
+h6 {
+  font-size: 100%;
+  width: 50%;
+  margin: auto;
+  padding-top: 10px;
+} */
+
+.magicalToy {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: solid pink 1px;
+  width: 60%;
+}
+
+.ball {
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
+  z-index: 1;
+}
+   
+.ball:before { /* white shadow */
+  position: absolute;
+  content: "";
+  background: radial-gradient(circle at 50% 160%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  bottom: 2.5%;
+  left: 5%;
+  opacity: 0.6;
+  height: 100%;
+  width: 90%;
+  -webkit-filter: blur(20px);
+  z-index: 2;
+} 
+
+
+/* white sparkle */
+
+/*
+.ball:after {  
+  width: 10%;
+  height: 100%;
+  content: "";
+  top: 40%;
+  background: radial-gradient(circle at 45% 50%, rgba(255, 255, 255, 0.266), rgba(255, 255, 255, 0.262) 14%, rgba(255, 255, 255, 0) 22%);
+  -webkit-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  -moz-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  -ms-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  -o-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+  transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  z-index: 3;
+}
+
+*/
+
+/* 
+ .eightCircle {
+  display: flex;
+  width: 14%;
+  aspect-ratio: 1 / 1;
+  margin-top: 12% ;
+  background: #000000;
+  border-radius: 50%;
+  border: rgba(255, 255, 255, 0.169) solid 3px;
+
+   -webkit-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  -moz-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  -ms-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  -o-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg); 
+  transform: translateX(80px) translateY(-80px) skewX(1deg) skewY(1deg);
+  
+  z-index: 4;
+}  */
+
+
+/* 
+.ball .eightCircle:before {
+  content: "8";
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 80px;
+  width: 100px;
+  left: 80px;
+  margin-left: -40px;
+  top: 80px;
+  margin-top: -40px;
+  color: black;
+  font-size: 40px;
+  line-height: 104px;
+  z-index: 4;
+  color: white;
+}
+
+  .triangle {
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    width: 60px;
+    height: 10px;
+    transform: rotate(-15deg);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 160px solid #2B0F88;
+    z-index: 5;
+  }
+
+.ball .shadow {
+position: absolute;
+width: 100%;
+height: 100%;
+background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+-webkit-transform: rotateX(90deg) translateZ(-150px);
+-moz-transform: rotateX(190deg) translateZ(70px);
+-ms-transform: rotateX(190deg) translateZ(70px);
+-o-transform: rotateX(190deg) translateZ(70px);
+transform: rotateX(190deg) translateZ(70px); 
+top: 60px;
+left: -120px; 
+z-index: -1;
+}
+
+ */
+
+/* .stage {
   pointer-events: none;
-}
+} */
 
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .pic {
+/* @media (prefers-reduced-motion: no-preference) {
+  .stage {
     animation: ball-spin normal 1.5s ease;
   }
-}
+} */
 
-@keyframes ball-spin {
+/* @keyframes ball-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
