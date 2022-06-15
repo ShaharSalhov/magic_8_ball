@@ -90,8 +90,8 @@ h6 {
   display: flex;
   width: 50%;
   aspect-ratio: 1 / 1;
-  margin-top: 44% ;
-  margin-left: 4%;
+  margin-top: 45% ;
+  margin-left: 3.5%;
   background: #000000;
   border-radius: 50%;
   border: rgba(255, 255, 255, 0.169) solid 3px;
@@ -103,9 +103,29 @@ h6 {
   z-index: 4;
 }  
 
+
 /* 
-.ball .eightCircle:before {
-  content: "8";
+  .triangle {
+    display: flex;
+    width: 38%;
+    aspect-ratio: 1 / 1;
+
+    margin: auto;
+    margin-left: -30%;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 140px solid #2B0F88;
+    transform: translateX(40%) translateY(-40%);
+    z-index: 5;
+  } */
+
+
+
+/* answer */
+/*
+.eightCircle:before {
+  border: solid 2px green;
+  content: "";
   display: block;
   position: absolute;
   text-align: center;
@@ -118,22 +138,12 @@ h6 {
   color: black;
   font-size: 40px;
   line-height: 104px;
-  z-index: 4;
+  z-index: 6;
   color: white;
 }
+*/
 
-  .triangle {
-    position: absolute;
-    top: 70px;
-    left: 120px;
-    width: 60px;
-    height: 10px;
-    transform: rotate(-15deg);
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 160px solid #2B0F88;
-    z-index: 5;
-  }
+/*
 
 .ball .shadow {
 position: absolute;
@@ -149,7 +159,6 @@ top: 60px;
 left: -120px; 
 z-index: -1;
 }
-
  */
 
 /* .stage {
