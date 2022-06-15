@@ -23,17 +23,16 @@ const getRandomAnswer = () => {
       <h6> If you're brave enough to know your fortune, ask the magic 8-ball a question and shake it... </h6>
 
       <div className='magicalToy'>
-
-            <div className="ball">
-              <div className="eightCircle">
-                <div className="triangle">
-                  <p className='text'>{answer}</p>
-                </div>
-              </div>
+        <div className="ball">
           
-          <div className="shadow"></div>
-
+          <div className="eightCircle">
+            <div className="triangle" />
           </div>
+          <p className='text'>{answer}</p>
+          
+          <div className="shadow" />
+
+        </div>
       </div>
 
       <button onClick={handleClick}> Shake </button>
