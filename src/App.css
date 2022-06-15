@@ -20,18 +20,48 @@ body {
   gap: 10px;
 }
 
-/* h4 {
-  font-size: 150%;
-  width: 50%;
+h4 {
   margin: auto;
-  padding-top: 10px;
+  padding-top: 60px;
 }
+
+@media screen and (max-width: 450px) {
+  h4 {
+    font-size: 100%;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  h4 {
+    font-size: 150%;
+    padding-bottom: 10px;
+  }
+}
+
 h6 {
-  font-size: 100%;
-  width: 50%;
   margin: auto;
-  padding-top: 10px;
-} */
+}
+
+@media screen and (max-width: 450px) {
+  h6 {
+    font-size: 80%;
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  h6 {
+    width: 100%;
+    font-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+
 
 .magicalToy {
   display: flex;
@@ -197,7 +227,6 @@ button:active {
   box-shadow: none;
   transform: translateY(0);
 }
-
 
 .magicalToy {
   animation: shake normal 0.8s;
