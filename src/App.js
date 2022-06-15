@@ -21,7 +21,6 @@ const getRandomAnswer = () => {
   setAnswer(answers[Math.floor(Math.random()*answers.length)])
 }
 
-
   return (
     <div className="App">
 
