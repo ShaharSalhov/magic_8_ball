@@ -86,25 +86,22 @@ h6 {
   z-index: 3;
 } 
 
-/* 
  .eightCircle {
   display: flex;
-  width: 14%;
+  width: 50%;
   aspect-ratio: 1 / 1;
-  margin-top: 12% ;
+  margin-top: 44% ;
+  margin-left: 4%;
   background: #000000;
   border-radius: 50%;
   border: rgba(255, 255, 255, 0.169) solid 3px;
-
-   -webkit-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  -moz-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  -ms-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  -o-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg); 
-  transform: translateX(80px) translateY(-80px) skewX(1deg) skewY(1deg);
-  
+  -webkit-transform: translateX(40%) translateY(-40%);
+  -moz-transform: translateX(40%) translateY(-40%);
+  -ms-transform: translateX(40%) translateY(-40%);
+  -o-transform: translateX(40%) translateY(-40%);  
+  transform: translateX(40%) translateY(-40%);
   z-index: 4;
-}  */
-
+}  
 
 /* 
 .ball .eightCircle:before {
