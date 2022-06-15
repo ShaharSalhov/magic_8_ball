@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const answers = ["No", "Yes", "Most likely", "Not sure", "Don't count on it", "You can count on it", "Absolutely", "Concentrate and ask again", "Ask again in a few minutes", "Better not to tell you now", "It is certain"]
 
