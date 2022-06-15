@@ -7,14 +7,12 @@ html {
 body {
   margin: 0;
   font-family: 'Chakra Petch', sans-serif;
-  background: linear-gradient(to bottom, rgb(14, 14, 38) 0%, rgba(19, 19, 51, 0.933) 40%, rgba(19, 19, 51, 0.832) 70%, rgba(19, 19, 51, 0.803) 100%);
-  background-color: #000000;
+  background: linear-gradient(to bottom, rgb(14, 14, 38) 0%, rgba(19, 19, 51, 0.952) 40%, rgba(19, 19, 51, 0.944) 70%, rgba(19, 19, 51, 0.867) 100%);
   background-repeat: no-repeat;
   color: white;
 }
 
 .App {
-  border: 1px red solid;
   text-align: center;
   font-size: 160%;
   display: flex;
@@ -39,6 +37,7 @@ h6 {
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 10px;
   width: 60%;
 }
 
@@ -166,22 +165,56 @@ h6 {
   z-index: -1;
   }
  
+button {
+  margin: auto; 
+  margin-bottom: 1%;
+ 
+  background-color: #151414f1;
+  border: 2px solid #1A1A1A;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  /* display: inline-block; */
 
-/* .stage {
-  pointer-events: none;
-} */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  
+  width: 6%;
+  height: fit-content;
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .stage {
-    animation: ball-spin normal 1.5s ease;
-  }
-} */
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+}
 
-/* @keyframes ball-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+.magicalToy {
+  animation: shake normal 0.8s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}  
+
+
