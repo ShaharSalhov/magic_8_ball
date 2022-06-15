@@ -183,7 +183,6 @@ h6 {
   color: white;
   justify-content: center;
   z-index: 7;  
-  border: fuchsia 1px solid;
 }
 
 @media screen and (max-width: 450px) {
