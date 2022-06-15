@@ -61,7 +61,7 @@ h6 {
   }
 }
 
-.magicalToy {
+#magicalToy {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -69,7 +69,7 @@ h6 {
 }
 
 @media screen and (max-width: 450px) {
-  .magicalToy {
+  #magicalToy {
     width: 100%;
   }
 }
@@ -233,7 +233,7 @@ button:active {
   transform: translateY(0);
 }
 
-.magicalToy {
+.animation {
   animation: shake normal 0.8s;
 }
 

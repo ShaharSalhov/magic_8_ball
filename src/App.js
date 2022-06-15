@@ -1,19 +1,26 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const answers = ["No", "Yes", "Most likely", "Not sure", "Don't count on it", "You can count on it", "Absolutely", "Concentrate and ask again", "Ask again in a few minutes", "Better not to tell you now", "It is certain"]
 
 function App() {
 
-const [answer, setAnswer] = React.useState("")
+const [answer, setAnswer] = useState("")
+const [isClicked, setIsClicked] = useState(false)
 
 const handleClick = () => {
-  getRandomAnswer()
+  setIsClicked(true)
+  setAnswer("")
+  setTimeout( () => {
+    setIsClicked(false)
+    getRandomAnswer()
+  }, 1000)
 }
 
 const getRandomAnswer = () => {
   setAnswer(answers[Math.floor(Math.random()*answers.length)])
 }
+
 
   return (
     <div className="App">
@@ -24,7 +31,7 @@ const getRandomAnswer = () => {
 
       <button className="button" onClick={handleClick}> Shake </button>
 
-      <div className='magicalToy' id="magicalToy">
+      <div className= { isClicked ? 'animation': null } id="magicalToy">
         <div className="ball">
 
           <div className="eightCircle">
