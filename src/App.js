@@ -24,11 +24,12 @@ const getRandomAnswer = () => {
 
       <div className='magicalToy'>
         <div className="ball">
-          
+
           <div className="eightCircle">
-            <div className="triangle" />
+            <div className="triangle">
+              <p className='text'> {answer} </p>
+            </div>
           </div>
-          <p className='text'>{answer}</p>
           
           <div className="shadow" />
 
